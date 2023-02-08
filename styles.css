@@ -9,9 +9,18 @@ body{
     font-weight: bolder;
 }
 
+
 .ribbon-bar{
     display: flex;
     justify-content: center;
+    padding: 1em;
+    gap: 1em;
+}
+
+.slide-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content-window{
@@ -23,5 +32,22 @@ body{
 .pixel-grid{
     height: 30em;
     width: 30em;
+    aspect-ratio: 1/1;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+
+.pixel {
+    box-sizing: border-box;
+    flex:1;
+}
+
+.pixel:hover{
     background-color: black;
+}
+
+.row-container{
+    flex:1;
+    display: flex;
 }

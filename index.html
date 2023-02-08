@@ -11,10 +11,13 @@
 <body>
     <div class="title">Etch-A-Sketch</div>
     <div class="ribbon-bar">
-        <p>Text 1</p>
-        <p>Text 2</p>
-        <p>Text 3</p>
-        <p>Text 4</p>
+        <input id='rainbow' type="checkbox">Toggle RNG</input>
+        <input id='shading' type="checkbox">Toggle shading</input>
+        <div class="slide-container">
+            <div id="slider-text">Grid size: 16</div>
+            <input type="range" min="2" max="100" value="16" class="slider" id="size-slider">
+        </div>
+        <button id='reset'>Reset</button>
     </div>
     <div class="content-window">
         <div class="pixel-grid">
